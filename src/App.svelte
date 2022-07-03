@@ -1,9 +1,9 @@
 <script>
-  export let name;
+  import Header from "./components/Header.svelte";
 </script>
 
 <main>
-  <h1>Hello {name}!</h1>
+  <Header />
 </main>
 
 <style>
@@ -81,5 +81,20 @@
     max-width: 100%;
     height: auto;
     display: block;
+  }
+
+  :global(a),
+  :global(a:hover) {
+    text-decoration: none;
+  }
+
+  :global(.bd-grid) {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 3rem;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
   }
 </style>
