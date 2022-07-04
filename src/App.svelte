@@ -34,6 +34,9 @@
 
     /* z-index */
     --z-fixed: 100;
+
+    /* effects */
+    --gradient: linear-gradient(0deg, #14aafa49 0%, #171d3299 100%);
   }
 
   @media screen and (min-width: 768px) {
