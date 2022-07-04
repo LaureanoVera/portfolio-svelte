@@ -2,7 +2,10 @@
   let imgSrc = "images/perfil.svg";
 
   const heroAnimation = () => {
+    let heroImage = document.getElementById("hero_image");
     let heroText = document.getElementById("hero_text");
+
+    heroImage.classList.add("animate__zoomInRight");
     heroText.classList.add("animate__flipInX");
   };
 
