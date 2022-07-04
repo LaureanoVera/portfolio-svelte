@@ -1,5 +1,9 @@
 <script>
-  let navTarget = document.querySelector(".nav__target");
+  let cvSrc = "others/cv.pdf";
+  let scrolled;
+  let newText;
+
+  // let navTarget = document.querySelector(".nav__target");
 
   window.addEventListener("scroll", () => {
     const top = document.documentElement.scrollTop;
@@ -7,13 +11,10 @@
     const client = document.documentElement.clientHeight;
 
     const height = scroll - client;
-    const scrolled = (top / height) * 100;
+    scrolled = (top / height) * 100;
 
-    scrolled == 100
-      ? (navTarget.style.color = `var(--first-color)`)
-      : (navTarget.style.color = `var(--text-color)`);
-
-    navTarget.innerHTML = `${scrolled.toFixed(2)}%`;
+    let newInnerHTML = `${scrolled.toFixed(2)}%`;
+    newText.innerHTML = newInnerHTML;
   });
 </script>
 
@@ -21,13 +22,19 @@
   <nav class="nav bd-grid">
     <ul class="nav__list">
       <li>
-        <p class="nav__target">0.00%</p>
+        <p
+          class="nav__target"
+          class:scroll-full={scrolled == 100}
+          bind:this={newText}
+        >
+          0.00%
+        </p>
       </li>
       <li class="nav__item">
         <a
-          href="../others/cv.pdf"
+          href={cvSrc}
           target="_blank"
-          download="cv.pdf"
+          download="laureano_vera.pdf"
           class="nav__link">Descargar CV</a
         >
       </li>
@@ -45,6 +52,10 @@
     z-index: var(--z-fixed);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(5px);
+  }
+
+  .scroll-full {
+    color: var(--first-color);
   }
 
   .nav {
@@ -73,5 +84,18 @@
   .nav__link:hover {
     color: var(--first-color);
     box-shadow: 0 0 3px var(--white-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav__list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav__item {
+      margin-left: var(--mb-4);
+      margin-bottom: 0;
+    }
   }
 </style>

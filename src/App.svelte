@@ -1,9 +1,11 @@
 <script>
   import Header from "./components/Header.svelte";
+  import Main from "./components/Main.svelte";
 </script>
 
 <main>
   <Header />
+  <Main />
 </main>
 
 <style>
@@ -63,6 +65,7 @@
     color: var(--text-color);
     line-height: 1.6;
     background-color: var(--dark-color);
+    overflow-x: hidden;
   }
 
   :global(h1),
@@ -88,6 +91,30 @@
     text-decoration: none;
   }
 
+  :global(.section) {
+    padding: 3rem 0;
+  }
+
+  :global(.section-title) {
+    position: relative;
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin: var(--mb-4) 0;
+    text-align: center;
+  }
+
+  :global(.section-title::after) {
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 2rem;
+    background-color: var(--white-color);
+  }
+
   :global(.bd-grid) {
     max-width: 1024px;
     display: grid;
@@ -96,5 +123,28 @@
     width: calc(100% - 3rem);
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
+  }
+
+  @media screen and (min-width: 768px) {
+    :global(body) {
+      margin: 0;
+    }
+    :global(.section) {
+      padding-top: 4rem;
+    }
+    :global(.section-title) {
+      margin-bottom: 3rem;
+    }
+
+    :global(.section-title::after) {
+      width: 64px;
+      top: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    :global(.bd-grid) {
+      margin: 0 auto;
+    }
   }
 </style>
