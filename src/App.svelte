@@ -11,6 +11,8 @@
 </main>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
   :global(:root) {
     --header-height: 3rem;
     --font-medium: 500;
@@ -19,6 +21,7 @@
     --first-color: #14aafa;
     --white-color: #fafaff;
     --dark-color: #171d32;
+    --black-color: #06080e;
     --text-color: #ced2da;
 
     /* fuente y tipo */
@@ -71,6 +74,7 @@
     line-height: 1.6;
     background-color: var(--dark-color);
     overflow-x: hidden;
+    font-family: "Lato", sans-serif;
   }
 
   :global(h1),
