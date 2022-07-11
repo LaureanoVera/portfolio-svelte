@@ -18,11 +18,9 @@
       <span class="skills__name">Html</span>
       <span class="skills__name">Css</span>
       <span class="skills__name">Javascript</span>
-      <span class="skills__name">Python</span>
-      <span class="skills__name">MongoDB</span>
-      <span class="skills__name">Express</span>
       <span class="skills__name">Svelte</span>
-      <span class="skills__name">Nodejs</span>
+      <span class="skills__name">TypeScript</span>
+      <span class="skills__name">Python</span>
 
       <h3 class="skills__subtitle">Herramientas</h3>
       <span class="skills__name">Git</span>

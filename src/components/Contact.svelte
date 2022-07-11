@@ -1,10 +1,15 @@
 <script>
   let contactSrc = "images/contact.svg";
+  const animation = () => {
+    let info = document.getElementById("contact_info");
+    let img = document.getElementById("contact_img");
+    target.classList.add(animType);
+  };
 </script>
 
 <section class="contact section" id="contact">
   <h2 class="section-title"><i class="far fa-id-card" /> Contacto</h2>
-  <div class="contact__container bd-grid">
+  <div class="contact__container bd-grid animate__animated" id="contact_info">
     <div class="contact__info animate__animated" id="contact_info">
       <h3 class="contact__subtitle">EMAIL</h3>
       <span class="contact__text">laureanoigvera@gmail.com</span>
@@ -13,7 +18,12 @@
       <h3 class="contact__subtitle">LINKEDIN</h3>
       <span class="contact__text">Laureano Vera</span>
     </div>
-    <img src={contactSrc} alt="Contact" />
+    <img
+      class="animate__animated"
+      src={contactSrc}
+      alt="Contact"
+      id="contact_img"
+    />
   </div>
 </section>
 

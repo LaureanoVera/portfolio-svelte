@@ -81,6 +81,10 @@
       row-gap: 0;
     }
 
+    .home__title {
+      font-size: var(--big-font-size);
+    }
+
     .home__img {
       max-height: none;
       height: auto;

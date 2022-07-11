@@ -20,7 +20,7 @@
       <h2 class="about__subtitle">Soy Laureano Vera</h2>
       <span class="about__profession">
         Desarrollador de software <br />
-        MESN Stack
+        <span class="about__profesion-plus">JavaScript - Python</span>
       </span>
       <p class="about__text">
         Hmm... constructor de tu futuro en la web, estamos en 2022 necesitas una
@@ -74,7 +74,7 @@
 
   .about__subtitle,
   .about__hobbies {
-    font-size: 1.25ren;
+    font-size: 1.25rem;
     color: var(--first-color);
     margin-bottom: var(--mb-1);
   }
@@ -88,6 +88,11 @@
   .about__profession {
     display: block;
     margin-bottom: var(--mb-4);
+  }
+
+  .about__profesion-plus {
+    color: var(--text-color);
+    opacity: 0.7;
   }
 
   .about__social-icon {

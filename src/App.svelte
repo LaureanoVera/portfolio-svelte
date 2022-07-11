@@ -4,15 +4,13 @@
   import Footer from "./components/Footer.svelte";
 </script>
 
-<main>
+<div class="app">
   <Header />
   <Main />
   <Footer />
-</main>
+</div>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-
   :global(:root) {
     --header-height: 3rem;
     --font-medium: 500;
@@ -74,7 +72,6 @@
     line-height: 1.6;
     background-color: var(--dark-color);
     overflow-x: hidden;
-    font-family: "Lato", sans-serif;
   }
 
   :global(h1),
@@ -110,6 +107,7 @@
     color: var(--first-color);
     margin: var(--mb-4) 0;
     text-align: center;
+    font-weight: 700;
   }
 
   :global(.section-title::after) {
