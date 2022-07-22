@@ -808,10 +808,10 @@ var app = (function () {
     			br0 = element("br");
     			t6 = space();
     			span0 = element("span");
-    			span0.textContent = "JavaScript - Python";
+    			span0.textContent = "JavaScript - TypeScript - Svelte";
     			t8 = space();
     			p = element("p");
-    			t9 = text("Hmm... constructor de tu futuro en la web, estamos en 2022 necesitas una\r\n        pagina, soy un super saiyan. Me alcanza simplemente con conquistar el\r\n        mundo, ya supiste!. ");
+    			t9 = text("Hmm... constructor de tu futuro en la web y un super saiyan. Me alcanza\r\n        simplemente con conquistar el mundo, yasupiste!. ");
     			br1 = element("br");
     			t10 = text("\r\n        Una descripcion muy corta ja, probablemente programador.");
     			t11 = space();
@@ -852,29 +852,29 @@ var app = (function () {
     			add_location(span0, file$9, 22, 8, 751);
     			attr_dev(span1, "class", "about__profession svelte-1bfo2hm");
     			add_location(span1, file$9, 20, 6, 667);
-    			add_location(br1, file$9, 27, 28, 1050);
+    			add_location(br1, file$9, 28, 57, 1034);
     			attr_dev(p, "class", "about__text svelte-1bfo2hm");
-    			add_location(p, file$9, 24, 6, 836);
+    			add_location(p, file$9, 26, 6, 871);
     			attr_dev(h3, "class", "about__hobbies svelte-1bfo2hm");
-    			add_location(h3, file$9, 30, 6, 1142);
-    			add_location(li0, file$9, 32, 8, 1203);
-    			add_location(li1, file$9, 33, 8, 1237);
-    			add_location(li2, file$9, 34, 8, 1266);
-    			add_location(ul, file$9, 31, 6, 1189);
+    			add_location(h3, file$9, 31, 6, 1126);
+    			add_location(li0, file$9, 33, 8, 1187);
+    			add_location(li1, file$9, 34, 8, 1221);
+    			add_location(li2, file$9, 35, 8, 1250);
+    			add_location(ul, file$9, 32, 6, 1173);
     			attr_dev(i1, "class", "fab fa-linkedin-in");
-    			add_location(i1, file$9, 40, 37, 1487);
+    			add_location(i1, file$9, 41, 37, 1471);
     			attr_dev(a0, "href", "https://www.linkedin.com/in/laureano-vera-320086204/");
     			attr_dev(a0, "target", "_blank");
     			attr_dev(a0, "class", "about__social-icon svelte-1bfo2hm");
-    			add_location(a0, file$9, 37, 8, 1348);
+    			add_location(a0, file$9, 38, 8, 1332);
     			attr_dev(i2, "class", "fab fa-github");
-    			add_location(i2, file$9, 45, 26, 1661);
+    			add_location(i2, file$9, 46, 26, 1645);
     			attr_dev(a1, "href", "https://github.com/LaureanoVera");
     			attr_dev(a1, "class", "about__social-icon svelte-1bfo2hm");
     			attr_dev(a1, "target", "_blank");
-    			add_location(a1, file$9, 42, 8, 1543);
+    			add_location(a1, file$9, 43, 8, 1527);
     			attr_dev(div1, "class", "about__social");
-    			add_location(div1, file$9, 36, 6, 1311);
+    			add_location(div1, file$9, 37, 6, 1295);
     			attr_dev(div2, "class", "about__info-content");
     			add_location(div2, file$9, 18, 4, 568);
     			attr_dev(div3, "class", "about__container bd-grid svelte-1bfo2hm");
@@ -1815,17 +1815,17 @@ var app = (function () {
     			attr_dev(h3, "class", "card__title svelte-m2bzns");
     			add_location(h3, file$5, 11, 4, 237);
     			attr_dev(i0, "class", "fas fa-link");
-    			add_location(i0, file$5, 14, 9, 378);
-    			attr_dev(a0, "href", /*github*/ ctx[2]);
+    			add_location(i0, file$5, 14, 9, 379);
+    			attr_dev(a0, "href", /*website*/ ctx[3]);
     			attr_dev(a0, "class", "card__button svelte-m2bzns");
     			attr_dev(a0, "target", "_blank");
     			add_location(a0, file$5, 13, 6, 314);
     			attr_dev(i1, "class", "fab fa-github");
     			add_location(i1, file$5, 17, 9, 494);
-    			attr_dev(a1, "href", /*website*/ ctx[3]);
+    			attr_dev(a1, "href", /*github*/ ctx[2]);
     			attr_dev(a1, "class", "card__button svelte-m2bzns");
     			attr_dev(a1, "target", "_blank");
-    			add_location(a1, file$5, 16, 6, 429);
+    			add_location(a1, file$5, 16, 6, 430);
     			attr_dev(div0, "class", "card__buttons");
     			add_location(div0, file$5, 12, 4, 279);
     			attr_dev(div1, "class", "card__link svelte-m2bzns");
@@ -1869,12 +1869,12 @@ var app = (function () {
 
     			if (dirty & /*title*/ 2) set_data_dev(t1, /*title*/ ctx[1]);
 
-    			if (dirty & /*github*/ 4) {
-    				attr_dev(a0, "href", /*github*/ ctx[2]);
+    			if (dirty & /*website*/ 8) {
+    				attr_dev(a0, "href", /*website*/ ctx[3]);
     			}
 
-    			if (dirty & /*website*/ 8) {
-    				attr_dev(a1, "href", /*website*/ ctx[3]);
+    			if (dirty & /*github*/ 4) {
+    				attr_dev(a1, "href", /*github*/ ctx[2]);
     			}
 
     			if (dirty & /*tech*/ 16) set_data_dev(t7, /*tech*/ ctx[4]);
@@ -2029,7 +2029,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (31:4) {#each projects as project}
+    // (38:4) {#each projects as project}
     function create_each_block(ctx) {
     	let card;
     	let current;
@@ -2075,7 +2075,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(31:4) {#each projects as project}",
+    		source: "(38:4) {#each projects as project}",
     		ctx
     	});
 
@@ -2116,14 +2116,14 @@ var app = (function () {
     			}
 
     			attr_dev(i, "class", "fas fa-tasks");
-    			add_location(i, file$4, 28, 28, 895);
+    			add_location(i, file$4, 35, 28, 1156);
     			attr_dev(h2, "class", "section-title");
-    			add_location(h2, file$4, 28, 2, 869);
+    			add_location(h2, file$4, 35, 2, 1130);
     			attr_dev(div, "class", "portfolio__container bd-grid svelte-1y4vcqn");
-    			add_location(div, file$4, 29, 2, 940);
+    			add_location(div, file$4, 36, 2, 1201);
     			attr_dev(section, "class", "portfolio section");
     			attr_dev(section, "id", "portfolio");
-    			add_location(section, file$4, 27, 0, 815);
+    			add_location(section, file$4, 34, 0, 1076);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2214,23 +2214,30 @@ var app = (function () {
     		{
     			imgSrc: "images/project-01.png",
     			title: "Batatabit",
-    			github: "https://github.com/LaureanoVera/batabit",
+    			github: "https://github.com/LaureanoVera/todoapp-svelte",
     			website: "https://the-batabit.netlify.app/",
     			tech: "Html / Css / Js"
     		},
     		{
     			imgSrc: "images/project-02.png",
-    			title: "Starbucks Landing",
+    			title: "TODOs App",
     			github: "https://github.com/LaureanoVera/landing-page-de-starbuckst",
-    			website: "https://starbucks-landing-lv.netlify.app/",
-    			tech: "Html / Css / Js"
+    			website: "https://todoappglass.netlify.app/",
+    			tech: "Svelte / Bootstrap / localStorage"
     		},
     		{
     			imgSrc: "images/project-03.png",
     			title: "Crypto Market",
     			github: "https://github.com/LaureanoVera/crypto-market",
     			website: "https://crypto-market-web.netlify.app/",
-    			tech: "Svelte / Bootstrap"
+    			tech: "Svelte / CoinGecko API"
+    		},
+    		{
+    			imgSrc: "images/project-04.png",
+    			title: "Rockstars Michis",
+    			github: "https://github.com/LaureanoVera/rockstars-michis",
+    			website: "https://rockstar-michis.netlify.app/",
+    			tech: "Svelte / TheCat API"
     		}
     	];
 
@@ -2441,20 +2448,14 @@ var app = (function () {
     	let t0;
     	let about;
     	let t1;
-    	let skills;
+    	let portfolio;
     	let t2;
     	let education;
-    	let t3;
-    	let portfolio;
-    	let t4;
-    	let contact;
     	let current;
     	home = new Home({ $$inline: true });
     	about = new About({ $$inline: true });
-    	skills = new Skills({ $$inline: true });
-    	education = new Education({ $$inline: true });
     	portfolio = new Portfolio({ $$inline: true });
-    	contact = new Contact({ $$inline: true });
+    	education = new Education({ $$inline: true });
 
     	const block = {
     		c: function create() {
@@ -2463,13 +2464,9 @@ var app = (function () {
     			t0 = space();
     			create_component(about.$$.fragment);
     			t1 = space();
-    			create_component(skills.$$.fragment);
+    			create_component(portfolio.$$.fragment);
     			t2 = space();
     			create_component(education.$$.fragment);
-    			t3 = space();
-    			create_component(portfolio.$$.fragment);
-    			t4 = space();
-    			create_component(contact.$$.fragment);
     			attr_dev(main, "class", "l-main");
     			add_location(main, file$2, 9, 0, 277);
     		},
@@ -2482,13 +2479,9 @@ var app = (function () {
     			append_dev(main, t0);
     			mount_component(about, main, null);
     			append_dev(main, t1);
-    			mount_component(skills, main, null);
+    			mount_component(portfolio, main, null);
     			append_dev(main, t2);
     			mount_component(education, main, null);
-    			append_dev(main, t3);
-    			mount_component(portfolio, main, null);
-    			append_dev(main, t4);
-    			mount_component(contact, main, null);
     			current = true;
     		},
     		p: noop,
@@ -2496,29 +2489,23 @@ var app = (function () {
     			if (current) return;
     			transition_in(home.$$.fragment, local);
     			transition_in(about.$$.fragment, local);
-    			transition_in(skills.$$.fragment, local);
-    			transition_in(education.$$.fragment, local);
     			transition_in(portfolio.$$.fragment, local);
-    			transition_in(contact.$$.fragment, local);
+    			transition_in(education.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(home.$$.fragment, local);
     			transition_out(about.$$.fragment, local);
-    			transition_out(skills.$$.fragment, local);
-    			transition_out(education.$$.fragment, local);
     			transition_out(portfolio.$$.fragment, local);
-    			transition_out(contact.$$.fragment, local);
+    			transition_out(education.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(main);
     			destroy_component(home);
     			destroy_component(about);
-    			destroy_component(skills);
-    			destroy_component(education);
     			destroy_component(portfolio);
-    			destroy_component(contact);
+    			destroy_component(education);
     		}
     	};
 
@@ -2579,25 +2566,6 @@ var app = (function () {
     	let img;
     	let img_src_value;
     	let t0;
-    	let ul;
-    	let li0;
-    	let a0;
-    	let t2;
-    	let li1;
-    	let a1;
-    	let t4;
-    	let li2;
-    	let a2;
-    	let t6;
-    	let li3;
-    	let a3;
-    	let t8;
-    	let li4;
-    	let a4;
-    	let t10;
-    	let li5;
-    	let a5;
-    	let t12;
     	let div1;
     	let p;
 
@@ -2608,73 +2576,22 @@ var app = (function () {
     			div0 = element("div");
     			img = element("img");
     			t0 = space();
-    			ul = element("ul");
-    			li0 = element("li");
-    			a0 = element("a");
-    			a0.textContent = "Home";
-    			t2 = space();
-    			li1 = element("li");
-    			a1 = element("a");
-    			a1.textContent = "Sobre mi";
-    			t4 = space();
-    			li2 = element("li");
-    			a2 = element("a");
-    			a2.textContent = "Educacion";
-    			t6 = space();
-    			li3 = element("li");
-    			a3 = element("a");
-    			a3.textContent = "Habilidades";
-    			t8 = space();
-    			li4 = element("li");
-    			a4 = element("a");
-    			a4.textContent = "Portfolio";
-    			t10 = space();
-    			li5 = element("li");
-    			a5 = element("a");
-    			a5.textContent = "Contacto";
-    			t12 = space();
     			div1 = element("div");
     			p = element("p");
     			p.textContent = "©Laureano Vera 2022";
-    			attr_dev(img, "class", "footer__image svelte-7izzs8");
+    			attr_dev(img, "class", "footer__image svelte-11pdk85");
     			if (!src_url_equal(img.src, img_src_value = /*footerSrc*/ ctx[0])) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Laureano Vera Perfil");
     			add_location(img, file$1, 7, 6, 170);
-    			attr_dev(a0, "href", "#home");
-    			attr_dev(a0, "class", "footer__link svelte-7izzs8");
-    			add_location(a0, file$1, 9, 12, 293);
-    			add_location(li0, file$1, 9, 8, 289);
-    			attr_dev(a1, "href", "#about");
-    			attr_dev(a1, "class", "footer__link svelte-7izzs8");
-    			add_location(a1, file$1, 10, 12, 357);
-    			add_location(li1, file$1, 10, 8, 353);
-    			attr_dev(a2, "href", "#education");
-    			attr_dev(a2, "class", "footer__link svelte-7izzs8");
-    			add_location(a2, file$1, 11, 12, 426);
-    			add_location(li2, file$1, 11, 8, 422);
-    			attr_dev(a3, "href", "#skills");
-    			attr_dev(a3, "class", "footer__link svelte-7izzs8");
-    			add_location(a3, file$1, 12, 12, 500);
-    			add_location(li3, file$1, 12, 8, 496);
-    			attr_dev(a4, "href", "#portfolio");
-    			attr_dev(a4, "class", "footer__link svelte-7izzs8");
-    			add_location(a4, file$1, 13, 12, 573);
-    			add_location(li4, file$1, 13, 8, 569);
-    			attr_dev(a5, "href", "#contact");
-    			attr_dev(a5, "class", "footer__link svelte-7izzs8");
-    			add_location(a5, file$1, 14, 12, 647);
-    			add_location(li5, file$1, 14, 8, 643);
-    			attr_dev(ul, "class", "footer__sections svelte-7izzs8");
-    			add_location(ul, file$1, 8, 6, 250);
     			attr_dev(div0, "class", "footer__data");
     			add_location(div0, file$1, 6, 4, 136);
-    			attr_dev(p, "class", "svelte-7izzs8");
-    			add_location(p, file$1, 18, 6, 769);
-    			attr_dev(div1, "class", "footer__copy svelte-7izzs8");
-    			add_location(div1, file$1, 17, 4, 735);
-    			attr_dev(div2, "class", "footer__container svelte-7izzs8");
+    			attr_dev(p, "class", "svelte-11pdk85");
+    			add_location(p, file$1, 10, 6, 294);
+    			attr_dev(div1, "class", "footer__copy svelte-11pdk85");
+    			add_location(div1, file$1, 9, 4, 260);
+    			attr_dev(div2, "class", "footer__container svelte-11pdk85");
     			add_location(div2, file$1, 5, 2, 99);
-    			attr_dev(footer, "class", "footer section svelte-7izzs8");
+    			attr_dev(footer, "class", "footer section svelte-11pdk85");
     			add_location(footer, file$1, 4, 0, 64);
     		},
     		l: function claim(nodes) {
@@ -2685,26 +2602,7 @@ var app = (function () {
     			append_dev(footer, div2);
     			append_dev(div2, div0);
     			append_dev(div0, img);
-    			append_dev(div0, t0);
-    			append_dev(div0, ul);
-    			append_dev(ul, li0);
-    			append_dev(li0, a0);
-    			append_dev(ul, t2);
-    			append_dev(ul, li1);
-    			append_dev(li1, a1);
-    			append_dev(ul, t4);
-    			append_dev(ul, li2);
-    			append_dev(li2, a2);
-    			append_dev(ul, t6);
-    			append_dev(ul, li3);
-    			append_dev(li3, a3);
-    			append_dev(ul, t8);
-    			append_dev(ul, li4);
-    			append_dev(li4, a4);
-    			append_dev(ul, t10);
-    			append_dev(ul, li5);
-    			append_dev(li5, a5);
-    			append_dev(div2, t12);
+    			append_dev(div2, t0);
     			append_dev(div2, div1);
     			append_dev(div1, p);
     		},

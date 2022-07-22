@@ -20,12 +20,13 @@
       <h2 class="about__subtitle">Soy Laureano Vera</h2>
       <span class="about__profession">
         Desarrollador de software <br />
-        <span class="about__profesion-plus">JavaScript - Python</span>
+        <span class="about__profesion-plus"
+          >JavaScript - TypeScript - Svelte</span
+        >
       </span>
       <p class="about__text">
-        Hmm... constructor de tu futuro en la web, estamos en 2022 necesitas una
-        pagina, soy un super saiyan. Me alcanza simplemente con conquistar el
-        mundo, ya supiste!. <br />
+        Hmm... constructor de tu futuro en la web y un super saiyan. Me alcanza
+        simplemente con conquistar el mundo, yasupiste!. <br />
         Una descripcion muy corta ja, probablemente programador.
       </p>
       <h3 class="about__hobbies">Hobbies</h3>

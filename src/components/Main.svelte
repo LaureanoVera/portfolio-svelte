@@ -10,8 +10,6 @@
 <main class="l-main">
   <Home />
   <About />
-  <Skills />
-  <Education />
   <Portfolio />
-  <Contact />
+  <Education />
 </main>

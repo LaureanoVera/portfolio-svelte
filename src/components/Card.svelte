@@ -11,10 +11,10 @@
   <div class="card__link">
     <h3 class="card__title">{title}</h3>
     <div class="card__buttons">
-      <a href={github} class="card__button" target="_blank"
+      <a href={website} class="card__button" target="_blank"
         ><i class="fas fa-link" /> Visit</a
       >
-      <a href={website} class="card__button" target="_blank"
+      <a href={github} class="card__button" target="_blank"
         ><i class="fab fa-github" /> Code</a
       >
     </div>

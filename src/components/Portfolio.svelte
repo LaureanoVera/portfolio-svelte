@@ -4,23 +4,30 @@
     {
       imgSrc: "images/project-01.png",
       title: "Batatabit",
-      github: "https://github.com/LaureanoVera/batabit",
+      github: "https://github.com/LaureanoVera/todoapp-svelte",
       website: "https://the-batabit.netlify.app/",
       tech: "Html / Css / Js",
     },
     {
       imgSrc: "images/project-02.png",
-      title: "Starbucks Landing",
+      title: "TODOs App",
       github: "https://github.com/LaureanoVera/landing-page-de-starbuckst",
-      website: "https://starbucks-landing-lv.netlify.app/",
-      tech: "Html / Css / Js",
+      website: "https://todoappglass.netlify.app/",
+      tech: "Svelte / Bootstrap / localStorage",
     },
     {
       imgSrc: "images/project-03.png",
       title: "Crypto Market",
       github: "https://github.com/LaureanoVera/crypto-market",
       website: "https://crypto-market-web.netlify.app/",
-      tech: "Svelte / Bootstrap",
+      tech: "Svelte / CoinGecko API",
+    },
+    {
+      imgSrc: "images/project-04.png",
+      title: "Rockstars Michis",
+      github: "https://github.com/LaureanoVera/rockstars-michis",
+      website: "https://rockstar-michis.netlify.app/",
+      tech: "Svelte / TheCat API",
     },
   ];
 </script>
