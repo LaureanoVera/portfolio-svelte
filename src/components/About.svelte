@@ -19,7 +19,10 @@
     <div class="about__info-content">
       <h2 class="about__subtitle">Soy Laureano Vera</h2>
       <span class="about__profession">
-        Desarrollador de software <br />
+        <span class="about__profesion-mod">&#60;</span>
+        Desarrollador Frontend
+        <span class="about__profesion-mod">/&#62;</span>
+        <br />
         <span class="about__profesion-plus"
           >JavaScript - TypeScript - Svelte</span
         >
@@ -89,6 +92,10 @@
   .about__profession {
     display: block;
     margin-bottom: var(--mb-4);
+  }
+
+  .about__profesion-mod {
+    color: var(--first-color);
   }
 
   .about__profesion-plus {
