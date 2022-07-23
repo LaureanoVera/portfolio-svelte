@@ -2668,23 +2668,18 @@ var app = (function () {
     function create_fragment(ctx) {
     	let div;
     	let header;
-    	let t0;
+    	let t;
     	let main;
-    	let t1;
-    	let footer;
     	let current;
     	header = new Header({ $$inline: true });
     	main = new Main({ $$inline: true });
-    	footer = new Footer({ $$inline: true });
 
     	const block = {
     		c: function create() {
     			div = element("div");
     			create_component(header.$$.fragment);
-    			t0 = space();
+    			t = space();
     			create_component(main.$$.fragment);
-    			t1 = space();
-    			create_component(footer.$$.fragment);
     			attr_dev(div, "class", "app");
     			add_location(div, file, 6, 0, 169);
     		},
@@ -2694,10 +2689,8 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
     			mount_component(header, div, null);
-    			append_dev(div, t0);
+    			append_dev(div, t);
     			mount_component(main, div, null);
-    			append_dev(div, t1);
-    			mount_component(footer, div, null);
     			current = true;
     		},
     		p: noop,
@@ -2705,20 +2698,17 @@ var app = (function () {
     			if (current) return;
     			transition_in(header.$$.fragment, local);
     			transition_in(main.$$.fragment, local);
-    			transition_in(footer.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
     			transition_out(header.$$.fragment, local);
     			transition_out(main.$$.fragment, local);
-    			transition_out(footer.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div);
     			destroy_component(header);
     			destroy_component(main);
-    			destroy_component(footer);
     		}
     	};
 

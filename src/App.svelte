@@ -7,7 +7,6 @@
 <div class="app">
   <Header />
   <Main />
-  <Footer />
 </div>
 
 <style>
